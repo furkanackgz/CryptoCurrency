@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B85541F28C89DE000A3CB7A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B85541E28C89DE000A3CB7A /* Colors.xcassets */; };
 		0BEA2A7028C764CA0072693A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA2A6F28C764CA0072693A /* AppDelegate.swift */; };
 		0BEA2A7228C764CA0072693A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA2A7128C764CA0072693A /* SceneDelegate.swift */; };
 		0BEA2A7428C764CA0072693A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA2A7328C764CA0072693A /* LoginView.swift */; };
@@ -24,9 +25,11 @@
 		0BFBDDD028C77E1C0079C1B9 /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFBDDCF28C77E1C0079C1B9 /* LoginContract.swift */; };
 		0BFBDDD428C786C10079C1B9 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFBDDD328C786C10079C1B9 /* LoginResponse.swift */; };
 		0BFBDDD828C789730079C1B9 /* LoginContractHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFBDDD728C789730079C1B9 /* LoginContractHelper.swift */; };
+		0BFBDDDC28C797980079C1B9 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFBDDDB28C797980079C1B9 /* ThemeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B85541E28C89DE000A3CB7A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		0BEA2A6C28C764CA0072693A /* CryptoCurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoCurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BEA2A6F28C764CA0072693A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BEA2A7128C764CA0072693A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +46,7 @@
 		0BFBDDCF28C77E1C0079C1B9 /* LoginContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
 		0BFBDDD328C786C10079C1B9 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		0BFBDDD728C789730079C1B9 /* LoginContractHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContractHelper.swift; sourceTree = "<group>"; };
+		0BFBDDDB28C797980079C1B9 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B85541D28C89DB500A3CB7A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0BEA2A7828C764CB0072693A /* Assets.xcassets */,
+				0B85541E28C89DE000A3CB7A /* Colors.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		0BEA2A6328C764CA0072693A = {
 			isa = PBXGroup;
 			children = (
@@ -78,10 +91,10 @@
 		0BEA2A6E28C764CA0072693A /* CryptoCurrency */ = {
 			isa = PBXGroup;
 			children = (
+				0BFBDDD928C797780079C1B9 /* Manager */,
 				0BEA2A8328C764DB0072693A /* Login Module */,
 				0BEA2A6F28C764CA0072693A /* AppDelegate.swift */,
 				0BEA2A7128C764CA0072693A /* SceneDelegate.swift */,
-				0BEA2A7828C764CB0072693A /* Assets.xcassets */,
 				0BEA2A7A28C764CB0072693A /* LaunchScreen.storyboard */,
 				0BEA2A7D28C764CB0072693A /* Info.plist */,
 				0BFBDDBD28C778FD0079C1B9 /* GoogleService-Info.plist */,
@@ -101,6 +114,21 @@
 				0BFBDDB728C777A60079C1B9 /* Router */,
 			);
 			path = "Login Module";
+			sourceTree = "<group>";
+		};
+		0BF8B8D928CA21BF00E2F311 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0BF8B8DA28CA21CA00E2F311 /* Alert View Helper */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		0BF8B8DA28CA21CA00E2F311 /* Alert View Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Alert View Helper";
 			sourceTree = "<group>";
 		};
 		0BFBDDB728C777A60079C1B9 /* Router */ = {
@@ -132,6 +160,7 @@
 			children = (
 				0BFBDDC628C77D4A0079C1B9 /* Storyboard */,
 				0BEA2A7328C764CA0072693A /* LoginView.swift */,
+				0BF8B8D928CA21BF00E2F311 /* Helper */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,6 +204,23 @@
 				0BFBDDD328C786C10079C1B9 /* LoginResponse.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		0BFBDDD928C797780079C1B9 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				0BFBDDDA28C7977F0079C1B9 /* ThemeManager */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		0BFBDDDA28C7977F0079C1B9 /* ThemeManager */ = {
+			isa = PBXGroup;
+			children = (
+				0B85541D28C89DB500A3CB7A /* Assets */,
+				0BFBDDDB28C797980079C1B9 /* ThemeManager.swift */,
+			);
+			path = ThemeManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B85541F28C89DE000A3CB7A /* Colors.xcassets in Resources */,
 				0BEA2A7C28C764CB0072693A /* LaunchScreen.storyboard in Resources */,
 				0BFBDDBE28C778FD0079C1B9 /* GoogleService-Info.plist in Resources */,
 				0BEA2A7928C764CB0072693A /* Assets.xcassets in Resources */,
@@ -267,6 +314,7 @@
 				0BEA2A7228C764CA0072693A /* SceneDelegate.swift in Sources */,
 				0BFBDDCA28C77DED0079C1B9 /* LoginPresenter.swift in Sources */,
 				0BFBDDD828C789730079C1B9 /* LoginContractHelper.swift in Sources */,
+				0BFBDDDC28C797980079C1B9 /* ThemeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,7 +466,7 @@
 				INFOPLIST_FILE = CryptoCurrency/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -446,7 +494,7 @@
 				INFOPLIST_FILE = CryptoCurrency/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
