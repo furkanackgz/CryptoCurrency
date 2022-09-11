@@ -80,6 +80,7 @@ extension LoginView {
     /**
      Sets background color as gradient.
      */
+    // MARK: - setBackgroundColor
     private func setBackgroundColor() {
         
         let colorTop = ThemeManager.colors.backgroundColor!
@@ -97,6 +98,7 @@ extension LoginView {
     /**
      Sets image view.
      */
+    // MARK: - setImageView
     private func setImageView() {
         
         imageView.image = UIImage(named: "cryptoCurrencyImage")
@@ -111,6 +113,7 @@ extension LoginView {
     /**
      Sets email text field as attributed string.
      */
+    // MARK: - setEmailTextField
     private func setEmailTextField() {
         
         emailTextField.attributedPlaceholder = NSAttributedString(string: "Enter your e-mail address",
@@ -125,6 +128,7 @@ extension LoginView {
     /**
      Sets password text field as attributed string.
      */
+    // MARK: - setPasswordTextField
     private func setPasswordTextField() {
         
         passwordTextField.placeholder = "Please enter password"
@@ -140,6 +144,7 @@ extension LoginView {
     /**
      Sets login button as custom.
      */
+    // MARK: - setLoginButton
     private func setLoginButton() {
         
         loginButton.setTitle("Login", for: .normal)
@@ -156,6 +161,7 @@ extension LoginView {
     /**
      Hides keyboard after user pressed the space.
      */
+    // MARK: - hideKeyboardWhenPressedToSpace
     private func hideKeyboardWhenPressedToSpace() {
         
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(spaceIsTapped))
@@ -168,6 +174,7 @@ extension LoginView {
 // MARK: - Presenter related
 extension LoginView {
     
+    // MARK: - setupUI
     func setupUI() {
         
         setBackgroundColor()
@@ -196,8 +203,12 @@ extension LoginView {
         
     }
     
+    // MARK: - displayAlertView
     func displayAlertView(with title: String, and message: String) {
-        print("title: \(title), message: \(message)")
+        let alert = AlertView(titleString: title, messageString: message)
+        alert.modalPresentationStyle = .overCurrentContext
+        alert.delegate = self
+        self.present(alert, animated: true)
     }
     
 }
@@ -210,6 +221,26 @@ extension LoginView {
         // Hides keyboard after space is tapped by the user.
         view.endEditing(true)
         
+    }
+    
+}
+
+// MARK: -
+extension LoginView: AlertViewDelegate {
+    
+    func didPressOkayButton() {
+        
+        guard let presentedVC = navigationController?.presentedViewController else { return }
+        
+        // Animate dismissing alert view from the screen
+        UIView.animate(withDuration: 0.5) {
+            presentedVC.view.alpha = 0
+        } completion: { [weak self] done in
+            if done {
+                self?.dismiss(animated: true)
+            }
+        }
+
     }
     
 }

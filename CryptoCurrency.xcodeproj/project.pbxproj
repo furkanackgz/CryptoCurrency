@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B4A3BAC28CDFB8D00D63D49 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4A3BAB28CDFB8D00D63D49 /* AlertView.swift */; };
 		0B85541F28C89DE000A3CB7A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B85541E28C89DE000A3CB7A /* Colors.xcassets */; };
 		0BEA2A7028C764CA0072693A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA2A6F28C764CA0072693A /* AppDelegate.swift */; };
 		0BEA2A7228C764CA0072693A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA2A7128C764CA0072693A /* SceneDelegate.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B4A3BAB28CDFB8D00D63D49 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		0B85541E28C89DE000A3CB7A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		0BEA2A6C28C764CA0072693A /* CryptoCurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoCurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BEA2A6F28C764CA0072693A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,16 +121,17 @@
 		0BF8B8D928CA21BF00E2F311 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				0BF8B8DA28CA21CA00E2F311 /* Alert View Helper */,
+				0BF8B8DA28CA21CA00E2F311 /* Alert View */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
 		};
-		0BF8B8DA28CA21CA00E2F311 /* Alert View Helper */ = {
+		0BF8B8DA28CA21CA00E2F311 /* Alert View */ = {
 			isa = PBXGroup;
 			children = (
+				0B4A3BAB28CDFB8D00D63D49 /* AlertView.swift */,
 			);
-			path = "Alert View Helper";
+			path = "Alert View";
 			sourceTree = "<group>";
 		};
 		0BFBDDB728C777A60079C1B9 /* Router */ = {
@@ -309,6 +312,7 @@
 				0BFBDDD428C786C10079C1B9 /* LoginResponse.swift in Sources */,
 				0BEA2A7428C764CA0072693A /* LoginView.swift in Sources */,
 				0BFBDDCC28C77DF50079C1B9 /* LoginRouter.swift in Sources */,
+				0B4A3BAC28CDFB8D00D63D49 /* AlertView.swift in Sources */,
 				0BEA2A7028C764CA0072693A /* AppDelegate.swift in Sources */,
 				0BFBDDD028C77E1C0079C1B9 /* LoginContract.swift in Sources */,
 				0BEA2A7228C764CA0072693A /* SceneDelegate.swift in Sources */,
