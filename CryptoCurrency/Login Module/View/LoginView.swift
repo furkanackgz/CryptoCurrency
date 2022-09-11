@@ -131,7 +131,6 @@ extension LoginView {
     // MARK: - setPasswordTextField
     private func setPasswordTextField() {
         
-        passwordTextField.placeholder = "Please enter password"
         passwordTextField.attributedPlaceholder = NSAttributedString(string: "Enter your password",
                                                                      attributes: [
                                                                         .foregroundColor: ThemeManager.colors.backgroundColor!,
@@ -208,7 +207,7 @@ extension LoginView {
         let alert = AlertView(titleString: title, messageString: message)
         alert.modalPresentationStyle = .overCurrentContext
         alert.delegate = self
-        self.present(alert, animated: true)
+        self.present(alert, animated: false)
     }
     
 }

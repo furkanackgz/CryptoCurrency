@@ -41,7 +41,7 @@ protocol LoginPresenterProtocol: AnyObject {
     
     // Interactor related
     var loginInteractor: LoginContract.loginInteractor! { get set }
-    func didReceiveLoginResponse(_ response: LoginResponse)
+    func didReceiveLoginResponse()
     
     // Router related
     var loginRouter: LoginContract.loginRouter! { get set }
