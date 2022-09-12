@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign Up View-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SignUpView" id="Y6W-OH-hqX" customClass="SignUpView" customModule="CryptoCurrency" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UG0-rP-2YY" userLabel="Container View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yD-Un-aQ3" userLabel="Email Label">
+                                        <rect key="frame" x="40" y="60" width="46.5" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Qrm-sk-H2r"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lo9-Tt-hJ5" userLabel="Email Text Field">
+                                        <rect key="frame" x="40" y="98" width="334" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="N8u-YY-Tjj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MkD-eM-W82" userLabel="Password Label">
+                                        <rect key="frame" x="40" y="178" width="46.5" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="8Hd-ls-QxP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aoR-4v-fai" userLabel="Password Text Field">
+                                        <rect key="frame" x="40" y="216" width="334" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="3PI-B1-Jof"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Hz-JG-MaE" userLabel="Password Again Label">
+                                        <rect key="frame" x="40" y="296" width="46.5" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="D9U-Jn-gHM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5RG-6g-qec" userLabel="Password Again Text Field">
+                                        <rect key="frame" x="40" y="334" width="334" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="K6m-I5-hgc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6K-WV-42m" userLabel="Sign Up Button">
+                                        <rect key="frame" x="40" y="454" width="334" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="pDC-mF-7xK"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                        <connections>
+                                            <action selector="didPressSignUpButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Gnb-Cz-26d"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Lo9-Tt-hJ5" secondAttribute="trailing" constant="40" id="1tT-Ub-Ojf"/>
+                                    <constraint firstItem="F6K-WV-42m" firstAttribute="leading" secondItem="UG0-rP-2YY" secondAttribute="leading" constant="40" id="3l1-kc-81d"/>
+                                    <constraint firstItem="aoR-4v-fai" firstAttribute="leading" secondItem="UG0-rP-2YY" secondAttribute="leading" constant="40" id="4WC-Wy-LE4"/>
+                                    <constraint firstItem="5RG-6g-qec" firstAttribute="top" secondItem="0Hz-JG-MaE" secondAttribute="bottom" constant="8" id="7c9-fX-JBW"/>
+                                    <constraint firstItem="7yD-Un-aQ3" firstAttribute="leading" secondItem="UG0-rP-2YY" secondAttribute="leading" constant="40" id="9MG-YQ-Rgg"/>
+                                    <constraint firstAttribute="trailing" secondItem="F6K-WV-42m" secondAttribute="trailing" constant="40" id="CPd-Wg-cyf"/>
+                                    <constraint firstItem="aoR-4v-fai" firstAttribute="top" secondItem="MkD-eM-W82" secondAttribute="bottom" constant="8" id="DdO-e7-maV"/>
+                                    <constraint firstItem="MkD-eM-W82" firstAttribute="top" secondItem="Lo9-Tt-hJ5" secondAttribute="bottom" constant="40" id="Hbn-GU-uw3"/>
+                                    <constraint firstItem="0Hz-JG-MaE" firstAttribute="leading" secondItem="UG0-rP-2YY" secondAttribute="leading" constant="40" id="Spy-m5-Mps"/>
+                                    <constraint firstItem="0Hz-JG-MaE" firstAttribute="top" secondItem="aoR-4v-fai" secondAttribute="bottom" constant="40" id="UBb-Am-Sov"/>
+                                    <constraint firstItem="MkD-eM-W82" firstAttribute="leading" secondItem="UG0-rP-2YY" secondAttribute="leading" constant="40" id="Xyi-6J-aG2"/>
+                                    <constraint firstItem="F6K-WV-42m" firstAttribute="top" secondItem="5RG-6g-qec" secondAttribute="bottom" constant="80" id="an6-Z6-ODW"/>
+                                    <constraint firstItem="Lo9-Tt-hJ5" firstAttribute="top" secondItem="7yD-Un-aQ3" secondAttribute="bottom" constant="8" id="bih-Te-PjV"/>
+                                    <constraint firstAttribute="trailing" secondItem="aoR-4v-fai" secondAttribute="trailing" constant="40" id="exw-vX-i9X"/>
+                                    <constraint firstAttribute="trailing" secondItem="5RG-6g-qec" secondAttribute="trailing" constant="40" id="ftR-ao-AJn"/>
+                                    <constraint firstItem="Lo9-Tt-hJ5" firstAttribute="leading" secondItem="UG0-rP-2YY" secondAttribute="leading" constant="40" id="gXW-VI-KKc"/>
+                                    <constraint firstItem="7yD-Un-aQ3" firstAttribute="top" secondItem="UG0-rP-2YY" secondAttribute="top" constant="60" id="jg4-0a-tff"/>
+                                    <constraint firstItem="5RG-6g-qec" firstAttribute="leading" secondItem="UG0-rP-2YY" secondAttribute="leading" constant="40" id="uEr-HI-bQT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="UG0-rP-2YY" secondAttribute="bottom" id="4sJ-ss-Exv"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="UG0-rP-2YY" secondAttribute="trailing" id="7tr-2Y-PNx"/>
+                            <constraint firstItem="UG0-rP-2YY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="B1B-jM-3oL"/>
+                            <constraint firstItem="UG0-rP-2YY" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="z1H-Yl-nn6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="UG0-rP-2YY" id="erT-4G-r9W"/>
+                        <outlet property="emailLabel" destination="7yD-Un-aQ3" id="7ps-aW-q4M"/>
+                        <outlet property="emailTextField" destination="Lo9-Tt-hJ5" id="1tV-X1-AP0"/>
+                        <outlet property="passwordAgainLabel" destination="0Hz-JG-MaE" id="RBR-Nx-CWN"/>
+                        <outlet property="passwordAgainTextField" destination="5RG-6g-qec" id="M6B-fE-gKa"/>
+                        <outlet property="passwordLabel" destination="MkD-eM-W82" id="wZC-iv-pGk"/>
+                        <outlet property="passwordTextField" destination="aoR-4v-fai" id="ZEP-DN-XZ4"/>
+                        <outlet property="signUpButton" destination="F6K-WV-42m" id="cCu-Ze-dxN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="100"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
