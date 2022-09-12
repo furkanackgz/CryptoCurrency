@@ -46,6 +46,9 @@ extension SignUpView {
         // Set background color
         setBackgroundColor()
         
+        // Set navigation bar
+        setNavigationBar()
+        
         // Set email label
         emailLabel.text = "E-mail"
         emailLabel.textColor = .white
@@ -86,6 +89,25 @@ extension SignUpView {
         gl.colors = [colorTop.cgColor, colorBottom.cgColor]
         view.layer.insertSublayer(gl, at: 0)
         containerView.backgroundColor = .clear
+        
+    }
+    
+    // MARK: - setNavigationBar
+    private func setNavigationBar() {
+        
+        // Set navigation bar back button
+        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.topItem?.backButtonDisplayMode = .minimal
+        
+        // Create navigation title's attributes
+        let attributes: [NSAttributedString.Key: Any] = [
+            .font: UIFont.init(name: "Marker Felt", size: 24)!,
+            .foregroundColor: UIColor.white
+        ]
+        
+        // Set navigation bar title
+        navigationController?.navigationBar.titleTextAttributes = attributes
+        title = "Sign Up"
         
     }
     

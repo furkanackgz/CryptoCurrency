@@ -28,16 +28,6 @@ class LoginView: UIViewController, LoginContract.loginView {
         loginPresenter?.viewDidLoad()
     }
     
-    /// Hide navigation bar
-    override func viewWillAppear(_ animated: Bool) {
-        navigationController?.navigationBar.isHidden = true
-    }
-    
-    // Show navigation bar
-    override func viewWillDisappear(_ animated: Bool) {
-        navigationController?.navigationBar.isHidden = false
-    }
-    
     @IBAction func didPressLoginButton(_ sender: Any) {
         
         // Check for whether both email and password text
@@ -70,6 +60,7 @@ class LoginView: UIViewController, LoginContract.loginView {
     
     
     @IBAction func didPressSignUpButton(_ sender: Any) {
+        loginPresenter?.didPressSignUpButton()
     }
     
 }
@@ -94,6 +85,18 @@ extension LoginView {
         containerView.backgroundColor = .clear
         
     }
+    
+    // MARK: - setNavigationBar
+    private func setNavigationBar() {
+        // Set navigation title as attributed string
+        let attributes: [NSAttributedString.Key: Any] = [
+            .font: UIFont.init(name: "Marker Felt", size: 24)!,
+            .foregroundColor: UIColor.white
+        ]
+        navigationController?.navigationBar.titleTextAttributes = attributes
+        title = "Login"
+    }
+
     
     /**
      Sets image view.
@@ -177,6 +180,8 @@ extension LoginView {
     func setupUI() {
         
         setBackgroundColor()
+        
+        setNavigationBar()
         
         setImageView()
         
