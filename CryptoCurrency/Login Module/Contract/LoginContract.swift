@@ -50,6 +50,6 @@ protocol LoginPresenterProtocol: AnyObject {
 // MARK: - LoginRouterProtocol
 protocol LoginRouterProtocol: AnyObject {
     // Presenter related
-    func navigateToSignUpPage(_ loginView: LoginContract.loginView)
-    func navigateToMainPage(_ loginView: LoginContract.loginView)
+    func navigateToSignUpPage(_ loginView: LoginView)
+    func navigateToMainPage(_ loginView: LoginView)
 }

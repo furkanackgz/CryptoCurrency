@@ -14,11 +14,15 @@ class LoginRouter: LoginContract.loginRouter {
 // MARK: - Presenter related
 extension LoginRouter {
     
-    func navigateToSignUpPage(_ loginView: LoginContract.loginView) {
+    func navigateToSignUpPage(_ loginView: LoginView) {
+        
+        guard let signUpView = SignUpContract.instantiateSignUpModule() else { return }
+        
+        loginView.navigationController?.pushViewController(signUpView, animated: true)
         
     }
     
-    func navigateToMainPage(_ loginView: LoginContract.loginView) {
+    func navigateToMainPage(_ loginView: LoginView) {
         
     }
     

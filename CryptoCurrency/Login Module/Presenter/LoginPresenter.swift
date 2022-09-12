@@ -42,6 +42,10 @@ extension LoginPresenter {
     
     func didPressSignUpButton() {
         
+        if let loginView = loginView as? LoginView {
+            loginRouter.navigateToSignUpPage(loginView)
+        }
+        
     }
     
 }
