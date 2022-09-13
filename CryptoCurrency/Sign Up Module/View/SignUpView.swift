@@ -32,6 +32,29 @@ class SignUpView: UIViewController, SignUpContract.signUpView {
 
     @IBAction func didPressSignUpButton(_ sender: Any) {
         
+        if let email = emailTextField.text {
+            
+            if let password = passwordTextField.text {
+                
+                if let passwordAgain = passwordAgainTextField.text {
+                    
+                    // If all the fields are filled then call presenter layer
+                    signUpPresenter?.didPressSignUpButton(email: email, password: password, passwordAgain: passwordAgain)
+                    
+                } else {
+                    displayAlert(title: "You did not enter second password!",
+                                 message: "For sign up you need to enter email and both passwords.")
+                }
+            } else {
+                displayAlert(title: "You did not enter password!",
+                             message: "For sign up you need to enter email and both passwords.")
+            }
+            
+        } else {
+            displayAlert(title: "You did not enter email!",
+                         message: "For sign up you need to enter email and both passwords.")
+        }
+        
     }
     
 }
@@ -191,6 +214,29 @@ extension SignUpView {
     
     // MARK: - displayAlert
     func displayAlert(title: String, message: String) {
+        let alert = AlertView(titleString: title, messageString: message)
+        alert.modalPresentationStyle = .overCurrentContext
+        alert.delegate = self
+        self.present(alert, animated: false)
+    }
+    
+}
+
+// Alert view related
+extension SignUpView: AlertViewDelegate {
+    
+    func didPressOkayButton() {
+        
+        guard let presentedVC = navigationController?.presentedViewController else { return }
+        
+        // Animate dismissing alert view from the screen
+        UIView.animate(withDuration: 0.5) {
+            presentedVC.view.alpha = 0
+        } completion: { [weak self] done in
+            if done {
+                self?.dismiss(animated: true)
+            }
+        }
         
     }
     

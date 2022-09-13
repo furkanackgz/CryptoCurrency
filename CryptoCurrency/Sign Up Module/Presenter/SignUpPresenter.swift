@@ -17,12 +17,35 @@ class SignUpPresenter: SignUpContract.signUpPresenter {
     
 }
 
+// Self related
+extension SignUpPresenter {
+    
+    // MARK: - checkPasswords
+    private func checkPasswords(password: String, passwordAgain: String) -> Bool {
+        
+        if password != passwordAgain {
+            return false
+        }
+        
+        return true
+    }
+    
+}
+
 // View related
 extension SignUpPresenter {
    
     // MARK: - didPressSignUpButton
-    func didPressSignUpButton(email: String, password: String) {
-        signUpInteractor.sendSignUpRequest(email: email, password: password)
+    func didPressSignUpButton(email: String, password: String, passwordAgain: String) {
+        
+        if password != passwordAgain {
+            signUpView.displayAlert(title: "Error",
+                                    message: "Please make sure both passwords are the same!")
+            
+        } else {
+            signUpInteractor.sendSignUpRequest(email: email, password: password)
+        }
+            
     }
     
 }
@@ -37,12 +60,17 @@ extension SignUpPresenter {
         
         if signUpResponse.isEmailVerified! {
             
+            // Save user login info
+            UserDefaults.standard.set(true, forKey: "isLogin")
+            
             // If email is verified, navigate to main page
             signUpRouter.navigateToMainPage(signUpResponse)
             
         } else {
             
+            guard let message = signUpResponse.error else { return }
             
+            signUpView.displayAlert(title: "Error!", message: message)
             
         }
         

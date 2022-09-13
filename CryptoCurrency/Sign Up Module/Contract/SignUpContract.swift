@@ -33,7 +33,7 @@ protocol SignUpInteractorProtocol: AnyObject {
 protocol SignUpPresenterProtocol: AnyObject {
     // View related
     var signUpView: SignUpContract.signUpView! { get set }
-    func didPressSignUpButton(email: String, password: String)
+    func didPressSignUpButton(email: String, password: String, passwordAgain: String)
     
     // Interactor related
     var signUpInteractor: SignUpContract.signUpInteractor! { get set }
