@@ -7,6 +7,19 @@
 
 import Foundation
 
-class HomeEntity {
+class HomeEntity: HomeContract.homeEntity {
+    
+    var decodedCurrencies: [Currency]?
+    
+    var homeInteractor: HomeContract.homeInteractor?
+    
+}
+
+// Interactor related
+extension HomeEntity {
+    
+    func decodeCurrencies(data: Data) {
+        
+    }
     
 }

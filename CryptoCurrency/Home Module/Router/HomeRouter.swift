@@ -7,6 +7,22 @@
 
 import UIKit
 
-class HomeRouter {
+class HomeRouter: HomeContract.homeRouter {
+    
+    var homeView: HomeView?
+    
+}
+
+// Presenter related
+extension HomeRouter {
+    
+    func navigateToDetailsPage() {
+        
+    }
+    
+    func navigateToPortfolioPage() {
+        
+    }
+    
     
 }

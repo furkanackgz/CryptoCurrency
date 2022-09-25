@@ -16,9 +16,37 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TeJ-Hw-fEJ" userLabel="Container View">
+                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="sMn-Wb-fc6" userLabel="Currencies Table View">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="763"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="sMn-Wb-fc6" firstAttribute="top" secondItem="TeJ-Hw-fEJ" secondAttribute="top" id="JvT-6a-L8E"/>
+                                    <constraint firstAttribute="trailing" secondItem="sMn-Wb-fc6" secondAttribute="trailing" id="M8O-HQ-pC4"/>
+                                    <constraint firstAttribute="bottom" secondItem="sMn-Wb-fc6" secondAttribute="bottom" id="nhS-g9-Pbv"/>
+                                    <constraint firstItem="sMn-Wb-fc6" firstAttribute="leading" secondItem="TeJ-Hw-fEJ" secondAttribute="leading" id="qXP-uL-JpQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TeJ-Hw-fEJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Chu-oJ-RNS"/>
+                            <constraint firstItem="TeJ-Hw-fEJ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="L1M-Ch-eHY"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="TeJ-Hw-fEJ" secondAttribute="bottom" id="WGh-5I-KyC"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="TeJ-Hw-fEJ" secondAttribute="trailing" id="fpv-Pa-iIt"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="containerView" destination="TeJ-Hw-fEJ" id="JKJ-bb-gne"/>
+                        <outlet property="currenciesTableView" destination="sMn-Wb-fc6" id="ZSH-Ss-gNk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
