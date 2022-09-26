@@ -93,6 +93,9 @@ extension CurrenciesTableViewHelper: UITableViewDataSource {
             return CurrencyTableViewCell()
         }
         
+        // Set background color of cell
+        cell.backgroundColor = .clear
+        
         // Set image view
         let imageURL = currencies[indexPath.row].image!
         cell.symbolImageView.kf.setImage(with: URL(string: imageURL))
@@ -109,7 +112,7 @@ extension CurrenciesTableViewHelper: UITableViewDataSource {
             cell.percentageLabel.textColor = .red
         }
         
-        cell.percentageLabel.text = "%\(percentage)"
+        cell.percentageLabel.text = "%\(String(format: "%.2f", percentage))"
         
         // Set price label
         cell.priceKeyLabel.text = "Price: "

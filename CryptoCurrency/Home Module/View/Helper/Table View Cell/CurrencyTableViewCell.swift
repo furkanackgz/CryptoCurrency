@@ -37,13 +37,10 @@ class CurrencyTableViewCell: UITableViewCell {
 extension CurrencyTableViewCell {
     
     private func setupUI() {
-            
-        // Set content view
-        contentView.backgroundColor = .clear
         
         // Set container view
         containerView.backgroundColor = .white
-        containerView.layer.cornerRadius = 8
+        containerView.layer.cornerRadius = 32
         
         // Set image view
         symbolImageView.layer.cornerRadius = symbolImageView.frame.height / 2

@@ -73,7 +73,7 @@ extension HomeView {
         
         // Create navigation title's attributes
         let attributes: [NSAttributedString.Key: Any] = [
-            .font: UIFont.init(name: "Marker Felt", size: 24)!,
+            .font: UIFont.init(name: "Marker Felt", size: 26)!,
             .foregroundColor: UIColor.white
         ]
         
@@ -88,7 +88,7 @@ extension HomeView {
         
         // Set navigation bar title
         
-        title = "Sign Up"
+        title = "Home"
         
         // Set navigation portfolio button
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Portfolio",
