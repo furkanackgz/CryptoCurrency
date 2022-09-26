@@ -79,6 +79,11 @@ extension HomeView {
         navigationController?.navigationBar.titleTextAttributes = attributes
         title = "Sign Up"
         
+        // Set navigation portfolio button
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Portfolio",
+                                                           style: .done,
+                                                           target: self,
+                                                           action: #selector(didPressPortfolioBarButton))
     }
     
 }
@@ -89,6 +94,15 @@ extension HomeView {
     // MARK: - updateTableView
     func updateTableView(currencies: [Currency]) {
         currenciesTableViewHelper.set(currencies: currencies)
+    }
+    
+}
+
+// MARK: - @objc methods
+extension HomeView {
+    
+    @objc private func didPressPortfolioBarButton() {
+        homePresenter?.didPressPortfolioButton()
     }
     
 }

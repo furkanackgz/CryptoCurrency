@@ -42,6 +42,7 @@ protocol HomePresenterProtocol: AnyObject {
     var homeView: HomeContract.homeView! { get set }
     func viewDidLoad()
     func didSelectCurrency(currency: Currency)
+    func didPressPortfolioButton()
     
     // Interactor related
     var homeInteractor: HomeContract.homeInteractor! { get set }

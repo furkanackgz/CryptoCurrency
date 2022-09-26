@@ -24,6 +24,10 @@ extension LoginRouter {
     
     func navigateToMainPage(_ loginView: LoginView) {
         
+        guard let homeView = HomeContract.instantiateHomeModule() else { return }
+        
+        loginView.navigationController?.pushViewController(homeView, animated: true)
+        
     }
     
 }

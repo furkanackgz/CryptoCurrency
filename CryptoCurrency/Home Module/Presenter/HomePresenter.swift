@@ -28,6 +28,9 @@ extension HomePresenter {
         
     }
     
+    func didPressPortfolioButton() {
+        homeRouter.navigateToPortfolioPage()
+    }
 }
 
 // Interactor related
