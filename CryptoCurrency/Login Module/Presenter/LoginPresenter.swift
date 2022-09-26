@@ -56,7 +56,7 @@ extension LoginPresenter {
     func didReceiveLoginResponse() {
         guard let loginResponse = loginInteractor.loginResponse else { return }
         
-        if loginResponse.isEmailVerified! {
+        if !loginResponse.isEmailVerified! {
             
             // Save user login info
             UserDefaults.standard.set(true, forKey: "isLogin")

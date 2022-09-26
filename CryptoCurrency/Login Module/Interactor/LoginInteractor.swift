@@ -35,9 +35,7 @@ extension LoginInteractor {
                 
                 loginResponse.isEmailVerified = result.user.isEmailVerified
                 loginResponse.email = result.user.email!
-                //loginResponse.phoneNumber = result.user.phoneNumber!
                 loginResponse.uid = result.user.uid
-                loginResponse.name = result.user.displayName!
                 
             }
             

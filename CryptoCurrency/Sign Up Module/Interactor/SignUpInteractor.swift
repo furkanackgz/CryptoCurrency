@@ -30,9 +30,7 @@ extension SignUpInteractor {
             case .success(let userInfo):
                 signUpResponse.isEmailVerified = userInfo.user.isEmailVerified
                 signUpResponse.email = userInfo.user.email!
-                //signUpResponse.phoneNumber = userInfo.user.phoneNumber!
                 signUpResponse.uid = userInfo.user.uid
-                signUpResponse.name = userInfo.user.displayName!
             }
             
             // Instantiate sign up response and call presenter layer
