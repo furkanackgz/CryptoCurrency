@@ -20,6 +20,17 @@ extension HomeEntity {
     
     func decodeCurrencies(data: Data) {
         
+        do {
+            // Decode JSON object to required type
+            decodedCurrencies = try JSONDecoder().decode([Currency].self, from: data)
+            
+            // If there is no error in decoding then let interactor know
+            homeInteractor?.didDecodeCurrencies()
+            
+        } catch(let error) {
+            print(error)
+        }
+        
     }
     
 }

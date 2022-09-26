@@ -21,7 +21,7 @@ class HomePresenter: HomeContract.homePresenter {
 extension HomePresenter {
     
     func viewDidLoad() {
-        
+        homeInteractor.fetchCurrencies()
     }
     
     func didSelectCurrency(currency: Currency) {
@@ -34,6 +34,16 @@ extension HomePresenter {
 extension HomePresenter {
     
     func didFetchCurrencies() {
+        
+        guard let currencies = homeInteractor.currencies else { return }
+        
+        // Return back to main queue from background queue
+        DispatchQueue.main.async { [weak self] in
+            
+            // Send data to view layer
+            self?.homeView.updateTableView(currencies: currencies)
+            
+        }
         
     }
     
