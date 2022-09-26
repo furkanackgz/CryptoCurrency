@@ -16,7 +16,7 @@ class CurrenciesTableViewHelper: NSObject {
     
     private var homeView: HomeView!
     
-    private var currencies: [Currency]!
+    private var currencies: [Currency]?
     
     init(homePresenter: HomeContract.homePresenter,
          currenciesTableView: UITableView,
@@ -36,6 +36,10 @@ extension CurrenciesTableViewHelper {
     
     // MARK: - setupUI
     private func setupUI() {
+        
+        // Assigned self as delegate and data source of table view
+        currenciesTableView.delegate = self
+        currenciesTableView.dataSource = self
         
         // Register currency table view cell
         currenciesTableView.register(.init(nibName: "CurrencyTableViewCell", bundle: nil),
@@ -68,8 +72,8 @@ extension CurrenciesTableViewHelper: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         // Get the selected currency and send it to presenter layer
-        let selectedCurrency = currencies[indexPath.row]
-        homePresenter.didSelectCurrency(currency: selectedCurrency)
+        let selectedCurrency = currencies?[indexPath.row]
+        homePresenter.didSelectCurrency(currency: selectedCurrency!)
         
     }
     
@@ -79,7 +83,7 @@ extension CurrenciesTableViewHelper: UITableViewDelegate {
 extension CurrenciesTableViewHelper: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return currencies.count
+        return currencies?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

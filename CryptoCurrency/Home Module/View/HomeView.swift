@@ -20,6 +20,8 @@ class HomeView: UIViewController, HomeContract.homeView {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        homePresenter?.viewDidLoad()
+        
         setupUI()
     }
 
@@ -75,8 +77,17 @@ extension HomeView {
             .foregroundColor: UIColor.white
         ]
         
+        // Create navigation bar's appearance
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = .clear
+        appearance.titleTextAttributes = attributes
+        
+        // Set navigation bar appearance
+        navigationController?.navigationBar.standardAppearance = appearance
+        
         // Set navigation bar title
-        navigationController?.navigationBar.titleTextAttributes = attributes
+        
         title = "Sign Up"
         
         // Set navigation portfolio button

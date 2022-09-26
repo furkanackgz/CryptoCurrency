@@ -26,8 +26,6 @@ extension HomeNetwork {
                 print(error!)
             } else {
                 
-                print(response!)
-                
                 if let data = data {
                     completion(data)
                 }

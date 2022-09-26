@@ -13,15 +13,15 @@ struct Currency: Codable {
     var name: String?
     var image: String?
     var currentPrice: Double?
-    var marketCap: Int64?
+    var marketCap: Double?
     var marketCapRank: Int?
-    var fullyDilutedValuation: Int64?
-    var totalVolume: Int64?
+    var fullyDilutedValuation: Double?
+    var totalVolume: Double?
     var high24h: Double?
     var low24h: Double?
     var priceChange24h: Double?
     var priceChangePercentage24h: Double?
-    var marketCapChange24h: Int64?
+    var marketCapChange24h: Double?
     var marketCapChangePercentage24h: Double?
     var circulatingSupply: Double?
     var totalSupply: Double?
