@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0B1D2D5D28D63C07004F0E7B /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1D2D5C28D63C07004F0E7B /* Currency.swift */; };
+		0B230BAE28E0804200CCF310 /* CurrenciesTableViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B230BAD28E0804200CCF310 /* CurrenciesTableViewHelper.swift */; };
+		0B230BB228E0820100CCF310 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B230BB028E0820100CCF310 /* CurrencyTableViewCell.swift */; };
+		0B230BB328E0820100CCF310 /* CurrencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B230BB128E0820100CCF310 /* CurrencyTableViewCell.xib */; };
 		0B4A3BAC28CDFB8D00D63D49 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4A3BAB28CDFB8D00D63D49 /* AlertView.swift */; };
 		0B767D9928D88513001A9CB9 /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B767D9828D88513001A9CB9 /* HomeEntity.swift */; };
 		0B767D9B28D8851C001A9CB9 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B767D9A28D8851C001A9CB9 /* HomeRouter.swift */; };
@@ -19,6 +22,7 @@
 		0B767DA828D8858A001A9CB9 /* HomeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B767DA728D8858A001A9CB9 /* HomeContract.swift */; };
 		0B767DAA28D88596001A9CB9 /* HomeContractHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B767DA928D88596001A9CB9 /* HomeContractHelper.swift */; };
 		0B85541F28C89DE000A3CB7A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B85541E28C89DE000A3CB7A /* Colors.xcassets */; };
+		0B9ECFCA28E1B5860087B461 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0B9ECFC928E1B5860087B461 /* Kingfisher */; };
 		0BD1B38028CE806F00AB905C /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BD1B37F28CE806F00AB905C /* SignUp.storyboard */; };
 		0BD1B38228CE808C00AB905C /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD1B38128CE808C00AB905C /* SignUpView.swift */; };
 		0BD1B38428CF4E6700AB905C /* SignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD1B38328CF4E6700AB905C /* SignUpInteractor.swift */; };
@@ -50,6 +54,9 @@
 
 /* Begin PBXFileReference section */
 		0B1D2D5C28D63C07004F0E7B /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		0B230BAD28E0804200CCF310 /* CurrenciesTableViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesTableViewHelper.swift; sourceTree = "<group>"; };
+		0B230BB028E0820100CCF310 /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		0B230BB128E0820100CCF310 /* CurrencyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyTableViewCell.xib; sourceTree = "<group>"; };
 		0B4A3BAB28CDFB8D00D63D49 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		0B767D9828D88513001A9CB9 /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
 		0B767D9A28D8851C001A9CB9 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
@@ -94,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B9ECFCA28E1B5860087B461 /* Kingfisher in Frameworks */,
 				0BFBDDC128C77AB40079C1B9 /* FirebaseAuth in Frameworks */,
 				0BFBDDC328C77AB40079C1B9 /* FirebaseFirestore in Frameworks */,
 				0BFBDDC528C77AB40079C1B9 /* FirebaseStorage in Frameworks */,
@@ -154,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				0B767DA028D88537001A9CB9 /* Storyboard */,
+				0B230BAC28E0800B00CCF310 /* Helper */,
 				0B767DA328D8856F001A9CB9 /* HomeView.swift */,
 			);
 			path = View;
@@ -182,6 +191,24 @@
 				0B1D2D5C28D63C07004F0E7B /* Currency.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		0B230BAC28E0800B00CCF310 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0B230BAF28E081DE00CCF310 /* Table View Cell */,
+				0B230BAD28E0804200CCF310 /* CurrenciesTableViewHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		0B230BAF28E081DE00CCF310 /* Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0B230BB028E0820100CCF310 /* CurrencyTableViewCell.swift */,
+				0B230BB128E0820100CCF310 /* CurrencyTableViewCell.xib */,
+			);
+			path = "Table View Cell";
 			sourceTree = "<group>";
 		};
 		0B767DA028D88537001A9CB9 /* Storyboard */ = {
@@ -463,6 +490,7 @@
 				0BFBDDC028C77AB40079C1B9 /* FirebaseAuth */,
 				0BFBDDC228C77AB40079C1B9 /* FirebaseFirestore */,
 				0BFBDDC428C77AB40079C1B9 /* FirebaseStorage */,
+				0B9ECFC928E1B5860087B461 /* Kingfisher */,
 			);
 			productName = CryptoCurrency;
 			productReference = 0BEA2A6C28C764CA0072693A /* CryptoCurrency.app */;
@@ -494,6 +522,7 @@
 			mainGroup = 0BEA2A6328C764CA0072693A;
 			packageReferences = (
 				0BFBDDBF28C77AB40079C1B9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				0B9ECFC828E1B5860087B461 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 0BEA2A6D28C764CA0072693A /* Products */;
 			projectDirPath = "";
@@ -509,6 +538,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B230BB328E0820100CCF310 /* CurrencyTableViewCell.xib in Resources */,
 				0B767DA228D88553001A9CB9 /* Home.storyboard in Resources */,
 				0B85541F28C89DE000A3CB7A /* Colors.xcassets in Resources */,
 				0BEA2A7C28C764CB0072693A /* LaunchScreen.storyboard in Resources */,
@@ -541,9 +571,11 @@
 				0B4A3BAC28CDFB8D00D63D49 /* AlertView.swift in Sources */,
 				0B767DA628D8857D001A9CB9 /* HomeNetwork.swift in Sources */,
 				0B767D9B28D8851C001A9CB9 /* HomeRouter.swift in Sources */,
+				0B230BB228E0820100CCF310 /* CurrencyTableViewCell.swift in Sources */,
 				0BEA2A7028C764CA0072693A /* AppDelegate.swift in Sources */,
 				0BFBDDD028C77E1C0079C1B9 /* LoginContract.swift in Sources */,
 				0B767DA428D8856F001A9CB9 /* HomeView.swift in Sources */,
+				0B230BAE28E0804200CCF310 /* CurrenciesTableViewHelper.swift in Sources */,
 				0B1D2D5D28D63C07004F0E7B /* Currency.swift in Sources */,
 				0B767D9D28D88523001A9CB9 /* HomePresenter.swift in Sources */,
 				0BD1B38228CE808C00AB905C /* SignUpView.swift in Sources */,
@@ -774,6 +806,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		0B9ECFC828E1B5860087B461 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		0BFBDDBF28C77AB40079C1B9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -785,6 +825,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0B9ECFC928E1B5860087B461 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B9ECFC828E1B5860087B461 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		0BFBDDC028C77AB40079C1B9 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0BFBDDBF28C77AB40079C1B9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
