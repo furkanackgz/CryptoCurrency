@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B02FE6F28E31FCE00CB2DE0 /* Details.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B02FE6E28E31FCE00CB2DE0 /* Details.storyboard */; };
+		0B02FE7128E31FE900CB2DE0 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B02FE7028E31FE900CB2DE0 /* DetailsView.swift */; };
+		0B02FE7328E32E1100CB2DE0 /* DetailsContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B02FE7228E32E1100CB2DE0 /* DetailsContract.swift */; };
+		0B02FE7528E32E2100CB2DE0 /* DetailsContractHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B02FE7428E32E2100CB2DE0 /* DetailsContractHelper.swift */; };
+		0B02FE7728E32E3500CB2DE0 /* DetailsNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B02FE7628E32E3500CB2DE0 /* DetailsNetwork.swift */; };
+		0B02FE7928E32E4300CB2DE0 /* DetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B02FE7828E32E4300CB2DE0 /* DetailsInteractor.swift */; };
+		0B02FE7B28E32E5300CB2DE0 /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B02FE7A28E32E5300CB2DE0 /* DetailsPresenter.swift */; };
+		0B02FE7D28E32E6000CB2DE0 /* DetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B02FE7C28E32E6000CB2DE0 /* DetailsRouter.swift */; };
 		0B1D2D5D28D63C07004F0E7B /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1D2D5C28D63C07004F0E7B /* Currency.swift */; };
 		0B230BAE28E0804200CCF310 /* CurrenciesTableViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B230BAD28E0804200CCF310 /* CurrenciesTableViewHelper.swift */; };
 		0B230BB228E0820100CCF310 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B230BB028E0820100CCF310 /* CurrencyTableViewCell.swift */; };
@@ -53,6 +61,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B02FE6E28E31FCE00CB2DE0 /* Details.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Details.storyboard; sourceTree = "<group>"; };
+		0B02FE7028E31FE900CB2DE0 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		0B02FE7228E32E1100CB2DE0 /* DetailsContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsContract.swift; sourceTree = "<group>"; };
+		0B02FE7428E32E2100CB2DE0 /* DetailsContractHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsContractHelper.swift; sourceTree = "<group>"; };
+		0B02FE7628E32E3500CB2DE0 /* DetailsNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsNetwork.swift; sourceTree = "<group>"; };
+		0B02FE7828E32E4300CB2DE0 /* DetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsInteractor.swift; sourceTree = "<group>"; };
+		0B02FE7A28E32E5300CB2DE0 /* DetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPresenter.swift; sourceTree = "<group>"; };
+		0B02FE7C28E32E6000CB2DE0 /* DetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsRouter.swift; sourceTree = "<group>"; };
 		0B1D2D5C28D63C07004F0E7B /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		0B230BAD28E0804200CCF310 /* CurrenciesTableViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesTableViewHelper.swift; sourceTree = "<group>"; };
 		0B230BB028E0820100CCF310 /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
@@ -111,6 +127,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B02FE6628E31F5D00CB2DE0 /* Details Module */ = {
+			isa = PBXGroup;
+			children = (
+				0B02FE6C28E31FB300CB2DE0 /* Contract */,
+				0B02FE6B28E31FAE00CB2DE0 /* Network */,
+				0B02FE6A28E31FAB00CB2DE0 /* View */,
+				0B02FE6928E31FA400CB2DE0 /* Interactor */,
+				0B02FE6828E31F8B00CB2DE0 /* Presenter */,
+				0B02FE6728E31F7800CB2DE0 /* Router */,
+			);
+			path = "Details Module";
+			sourceTree = "<group>";
+		};
+		0B02FE6728E31F7800CB2DE0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0B02FE7C28E32E6000CB2DE0 /* DetailsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		0B02FE6828E31F8B00CB2DE0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0B02FE7A28E32E5300CB2DE0 /* DetailsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0B02FE6928E31FA400CB2DE0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0B02FE7828E32E4300CB2DE0 /* DetailsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0B02FE6A28E31FAB00CB2DE0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0B02FE6D28E31FB700CB2DE0 /* Storyboard */,
+				0B02FE7028E31FE900CB2DE0 /* DetailsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0B02FE6B28E31FAE00CB2DE0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0B02FE7628E32E3500CB2DE0 /* DetailsNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0B02FE6C28E31FB300CB2DE0 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				0B02FE7228E32E1100CB2DE0 /* DetailsContract.swift */,
+				0B02FE7428E32E2100CB2DE0 /* DetailsContractHelper.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		0B02FE6D28E31FB700CB2DE0 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0B02FE6E28E31FCE00CB2DE0 /* Details.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		0B1D2D5328D63B9E004F0E7B /* Home Module */ = {
 			isa = PBXGroup;
 			children = (
@@ -340,6 +427,7 @@
 				0BEA2A8328C764DB0072693A /* Login Module */,
 				0BD1B37428CE7FB100AB905C /* Sign Up Module */,
 				0B1D2D5328D63B9E004F0E7B /* Home Module */,
+				0B02FE6628E31F5D00CB2DE0 /* Details Module */,
 				0BEA2A6F28C764CA0072693A /* AppDelegate.swift */,
 				0BEA2A7128C764CA0072693A /* SceneDelegate.swift */,
 				0BEA2A7A28C764CB0072693A /* LaunchScreen.storyboard */,
@@ -545,6 +633,7 @@
 				0BD1B38028CE806F00AB905C /* SignUp.storyboard in Resources */,
 				0BFBDDBE28C778FD0079C1B9 /* GoogleService-Info.plist in Resources */,
 				0BEA2A7928C764CB0072693A /* Assets.xcassets in Resources */,
+				0B02FE6F28E31FCE00CB2DE0 /* Details.storyboard in Resources */,
 				0BEA2A7728C764CA0072693A /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -562,6 +651,8 @@
 				0BFBDDD428C786C10079C1B9 /* LoginResponse.swift in Sources */,
 				0BD1B38628CF4E7300AB905C /* SignUpPresenter.swift in Sources */,
 				0BD1B38828CF4E8200AB905C /* SignUpResponse.swift in Sources */,
+				0B02FE7528E32E2100CB2DE0 /* DetailsContractHelper.swift in Sources */,
+				0B02FE7B28E32E5300CB2DE0 /* DetailsPresenter.swift in Sources */,
 				0BEA2A7428C764CA0072693A /* LoginView.swift in Sources */,
 				0BD1B38C28CF4EAE00AB905C /* SignUpNetwork.swift in Sources */,
 				0BD1B38A28CF4E9B00AB905C /* SignUpRouter.swift in Sources */,
@@ -569,10 +660,14 @@
 				0BFBDDCC28C77DF50079C1B9 /* LoginRouter.swift in Sources */,
 				0B767D9928D88513001A9CB9 /* HomeEntity.swift in Sources */,
 				0B4A3BAC28CDFB8D00D63D49 /* AlertView.swift in Sources */,
+				0B02FE7128E31FE900CB2DE0 /* DetailsView.swift in Sources */,
 				0B767DA628D8857D001A9CB9 /* HomeNetwork.swift in Sources */,
+				0B02FE7328E32E1100CB2DE0 /* DetailsContract.swift in Sources */,
 				0B767D9B28D8851C001A9CB9 /* HomeRouter.swift in Sources */,
 				0B230BB228E0820100CCF310 /* CurrencyTableViewCell.swift in Sources */,
+				0B02FE7928E32E4300CB2DE0 /* DetailsInteractor.swift in Sources */,
 				0BEA2A7028C764CA0072693A /* AppDelegate.swift in Sources */,
+				0B02FE7728E32E3500CB2DE0 /* DetailsNetwork.swift in Sources */,
 				0BFBDDD028C77E1C0079C1B9 /* LoginContract.swift in Sources */,
 				0B767DA428D8856F001A9CB9 /* HomeView.swift in Sources */,
 				0B230BAE28E0804200CCF310 /* CurrenciesTableViewHelper.swift in Sources */,
@@ -583,6 +678,7 @@
 				0BEA2A7228C764CA0072693A /* SceneDelegate.swift in Sources */,
 				0BFBDDCA28C77DED0079C1B9 /* LoginPresenter.swift in Sources */,
 				0BFBDDD828C789730079C1B9 /* LoginContractHelper.swift in Sources */,
+				0B02FE7D28E32E6000CB2DE0 /* DetailsRouter.swift in Sources */,
 				0B767DA828D8858A001A9CB9 /* HomeContract.swift in Sources */,
 				0BD1B38E28CF4EB600AB905C /* SignUpContract.swift in Sources */,
 				0BD1B38428CF4E6700AB905C /* SignUpInteractor.swift in Sources */,
