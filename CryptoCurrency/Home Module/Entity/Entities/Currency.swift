@@ -34,6 +34,7 @@ struct Currency: Codable {
     var atlDate: String?
     var roi: Roi?
     var lastUpdated: String?
+    var sparklineIn7d: SparklineIn7d
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -62,6 +63,7 @@ struct Currency: Codable {
         case atlDate = "atl_date"
         case roi
         case lastUpdated = "last_updated"
+        case sparklineIn7d = "sparkline_in_7d"
     }
     
     
@@ -71,4 +73,8 @@ struct Roi: Codable {
     var times: Double?
     var currency: String?
     var percentage: Double?
+}
+
+struct SparklineIn7d: Codable {
+    var price: [Double]?
 }

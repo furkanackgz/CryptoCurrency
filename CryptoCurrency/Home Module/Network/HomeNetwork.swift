@@ -16,7 +16,7 @@ extension HomeNetwork {
     
     func fetchCurrencies(completion:@escaping (Data)->(Void) ) {
         
-        let urlString = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd"
+        let urlString = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&sparkline=true"
         
         guard let url = URL(string: urlString) else { return }
         
