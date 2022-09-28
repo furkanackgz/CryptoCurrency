@@ -16,6 +16,7 @@
 		0B02FE7B28E32E5300CB2DE0 /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B02FE7A28E32E5300CB2DE0 /* DetailsPresenter.swift */; };
 		0B02FE7D28E32E6000CB2DE0 /* DetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B02FE7C28E32E6000CB2DE0 /* DetailsRouter.swift */; };
 		0B02FE8328E34B6C00CB2DE0 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 0B02FE8228E34B6C00CB2DE0 /* Charts */; };
+		0B1B699228E4C7B400C11F16 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0B1B699128E4C7B400C11F16 /* FirebaseFirestoreSwift */; };
 		0B1D2D5D28D63C07004F0E7B /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1D2D5C28D63C07004F0E7B /* Currency.swift */; };
 		0B230BAE28E0804200CCF310 /* CurrenciesTableViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B230BAD28E0804200CCF310 /* CurrenciesTableViewHelper.swift */; };
 		0B230BB228E0820100CCF310 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B230BB028E0820100CCF310 /* CurrencyTableViewCell.swift */; };
@@ -123,6 +124,7 @@
 				0BFBDDC128C77AB40079C1B9 /* FirebaseAuth in Frameworks */,
 				0BFBDDC328C77AB40079C1B9 /* FirebaseFirestore in Frameworks */,
 				0BFBDDC528C77AB40079C1B9 /* FirebaseStorage in Frameworks */,
+				0B1B699228E4C7B400C11F16 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +200,13 @@
 				0B02FE6E28E31FCE00CB2DE0 /* Details.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		0B1B699028E4C7B300C11F16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		0B1D2D5328D63B9E004F0E7B /* Home Module */ = {
@@ -410,6 +419,7 @@
 			children = (
 				0BEA2A6E28C764CA0072693A /* CryptoCurrency */,
 				0BEA2A6D28C764CA0072693A /* Products */,
+				0B1B699028E4C7B300C11F16 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -582,6 +592,7 @@
 				0BFBDDC428C77AB40079C1B9 /* FirebaseStorage */,
 				0B9ECFC928E1B5860087B461 /* Kingfisher */,
 				0B02FE8228E34B6C00CB2DE0 /* Charts */,
+				0B1B699128E4C7B400C11F16 /* FirebaseFirestoreSwift */,
 			);
 			productName = CryptoCurrency;
 			productReference = 0BEA2A6C28C764CA0072693A /* CryptoCurrency.app */;
@@ -937,6 +948,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0B02FE8128E34B6C00CB2DE0 /* XCRemoteSwiftPackageReference "Charts" */;
 			productName = Charts;
+		};
+		0B1B699128E4C7B400C11F16 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BFBDDBF28C77AB40079C1B9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
 		};
 		0B9ECFC928E1B5860087B461 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;

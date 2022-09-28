@@ -23,6 +23,7 @@ protocol DetailsViewProtocol: AnyObject {
     func setupUI(selectedCurrency: Currency,
                  isCurrencySaved: Bool,
                  chartData: LineChartData)
+    func displayAlert(title: String, message: String)
 }
 
 // MARK: - DetailsInteractorProtocol
@@ -40,10 +41,11 @@ protocol DetailsPresenterProtocol: AnyObject {
     var detailsView: DetailsContract.detailsView! { get set }
     func viewDidLoad()
     func didPressBarButton(of type: String)
+    func didPressAlertButton()
     
     // Interactor related
     var detailsInteractor: DetailsContract.detailsInteractor! { get set }
-    func didFinishBarButtonAction()
+    func didFinishBarButtonAction(title: String)
     
     // Router related
     var detailsRouter: DetailsContract.detailsRouter! { get set }

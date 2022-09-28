@@ -50,34 +50,8 @@ class DetailsView: UIViewController, DetailsContract.detailsView {
 
 }
 
-// Presenter related
+// Self related
 extension DetailsView {
-    
-    // MARK: - setupUI
-    func setupUI(selectedCurrency: Currency,
-                 isCurrencySaved: Bool,
-                 chartData: LineChartData) {
-        
-        // Set background color
-        setBackgroundColor()
-        
-        // Set is currency saved variable
-        self.isCurrencySaved = isCurrencySaved
-        
-        // Set navigation bar
-        setNavigationBar(id: selectedCurrency.id!)
-        
-        // Set image view
-        let imageSource = selectedCurrency.image!
-        currencyImageView.kf.setImage(with: URL(string: imageSource))
-        
-        // Set chart view
-        setChartView(with: chartData)
-        
-        // Set labels
-        setLabels(with: selectedCurrency)
-        
-    }
     
     /**
      Sets background color as gradient.
@@ -236,6 +210,66 @@ extension DetailsView {
         
         return arrangedDate
         
+    }
+    
+}
+
+// Presenter related
+extension DetailsView {
+    
+    // MARK: - setupUI
+    func setupUI(selectedCurrency: Currency,
+                 isCurrencySaved: Bool,
+                 chartData: LineChartData) {
+        
+        // Set background color
+        setBackgroundColor()
+        
+        // Set is currency saved variable
+        self.isCurrencySaved = isCurrencySaved
+        
+        // Set navigation bar
+        setNavigationBar(id: selectedCurrency.id!)
+        
+        // Set image view
+        let imageSource = selectedCurrency.image!
+        currencyImageView.kf.setImage(with: URL(string: imageSource))
+        
+        // Set chart view
+        setChartView(with: chartData)
+        
+        // Set labels
+        setLabels(with: selectedCurrency)
+        
+    }
+    
+    // MARK: - displayAlert
+    func displayAlert(title: String, message: String) {
+        let alert = AlertView(titleString: title, messageString: message)
+        alert.modalPresentationStyle = .overCurrentContext
+        alert.delegate = self
+        self.present(alert, animated: false)
+    }
+    
+}
+
+// MARK: -
+extension DetailsView: AlertViewDelegate {
+    
+    func didPressOkayButton() {
+        
+        guard let presentedVC = navigationController?.presentedViewController else { return }
+        
+        // Animate dismissing alert view from the screen
+        UIView.animate(withDuration: 0.5) {
+            presentedVC.view.alpha = 0
+        } completion: { [weak self] done in
+            if done {
+                self?.dismiss(animated: true)
+                self?.detailsPresenter?.didPressAlertButton()
+            }
+        }
+
     }
     
 }
