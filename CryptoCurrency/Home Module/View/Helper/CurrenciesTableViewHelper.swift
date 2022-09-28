@@ -71,6 +71,9 @@ extension CurrenciesTableViewHelper: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        // Deselect row after selecting it
+        tableView.deselectRow(at: indexPath, animated: true)
+        
         // Get the selected currency and send it to presenter layer
         let selectedCurrency = currencies?[indexPath.row]
         homePresenter.didSelectCurrency(currency: selectedCurrency!)

@@ -260,8 +260,8 @@
 			isa = PBXGroup;
 			children = (
 				0B767DA028D88537001A9CB9 /* Storyboard */,
-				0B230BAC28E0800B00CCF310 /* Helper */,
 				0B767DA328D8856F001A9CB9 /* HomeView.swift */,
+				0B230BAC28E0800B00CCF310 /* Helper */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -294,8 +294,8 @@
 		0B230BAC28E0800B00CCF310 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				0B230BAF28E081DE00CCF310 /* Table View Cell */,
 				0B230BAD28E0804200CCF310 /* CurrenciesTableViewHelper.swift */,
+				0B230BAF28E081DE00CCF310 /* Table View Cell */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
