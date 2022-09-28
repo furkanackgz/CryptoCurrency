@@ -15,6 +15,7 @@
 		0B02FE7928E32E4300CB2DE0 /* DetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B02FE7828E32E4300CB2DE0 /* DetailsInteractor.swift */; };
 		0B02FE7B28E32E5300CB2DE0 /* DetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B02FE7A28E32E5300CB2DE0 /* DetailsPresenter.swift */; };
 		0B02FE7D28E32E6000CB2DE0 /* DetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B02FE7C28E32E6000CB2DE0 /* DetailsRouter.swift */; };
+		0B02FE8328E34B6C00CB2DE0 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 0B02FE8228E34B6C00CB2DE0 /* Charts */; };
 		0B1D2D5D28D63C07004F0E7B /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1D2D5C28D63C07004F0E7B /* Currency.swift */; };
 		0B230BAE28E0804200CCF310 /* CurrenciesTableViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B230BAD28E0804200CCF310 /* CurrenciesTableViewHelper.swift */; };
 		0B230BB228E0820100CCF310 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B230BB028E0820100CCF310 /* CurrencyTableViewCell.swift */; };
@@ -117,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B02FE8328E34B6C00CB2DE0 /* Charts in Frameworks */,
 				0B9ECFCA28E1B5860087B461 /* Kingfisher in Frameworks */,
 				0BFBDDC128C77AB40079C1B9 /* FirebaseAuth in Frameworks */,
 				0BFBDDC328C77AB40079C1B9 /* FirebaseFirestore in Frameworks */,
@@ -579,6 +581,7 @@
 				0BFBDDC228C77AB40079C1B9 /* FirebaseFirestore */,
 				0BFBDDC428C77AB40079C1B9 /* FirebaseStorage */,
 				0B9ECFC928E1B5860087B461 /* Kingfisher */,
+				0B02FE8228E34B6C00CB2DE0 /* Charts */,
 			);
 			productName = CryptoCurrency;
 			productReference = 0BEA2A6C28C764CA0072693A /* CryptoCurrency.app */;
@@ -611,6 +614,7 @@
 			packageReferences = (
 				0BFBDDBF28C77AB40079C1B9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				0B9ECFC828E1B5860087B461 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				0B02FE8128E34B6C00CB2DE0 /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = 0BEA2A6D28C764CA0072693A /* Products */;
 			projectDirPath = "";
@@ -902,6 +906,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		0B02FE8128E34B6C00CB2DE0 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = exactVersion;
+				version = 4.1.0;
+			};
+		};
 		0B9ECFC828E1B5860087B461 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -921,6 +933,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0B02FE8228E34B6C00CB2DE0 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B02FE8128E34B6C00CB2DE0 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
 		0B9ECFC928E1B5860087B461 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0B9ECFC828E1B5860087B461 /* XCRemoteSwiftPackageReference "Kingfisher" */;
