@@ -100,9 +100,16 @@ extension DetailsPresenter {
             UserDefaults.standard.set(true, forKey: selectedCurrency.id!)
             detailsView.displayAlert(title: title, message: "You can check it in portfolio!")
             
+        case "Error adding currency!":
+            detailsView.displayAlert(title: "Error", message: title)
+            
         case "Succesfully removed!":
             UserDefaults.standard.removeObject(forKey: selectedCurrency.id!)
             detailsView.displayAlert(title: title, message: "If exists, you can check your other currencies in portfolio!")
+            
+        case "Error removing currency!":
+            detailsView.displayAlert(title: "Error", message: title)
+            
         default:
             print("Response error!")
         }

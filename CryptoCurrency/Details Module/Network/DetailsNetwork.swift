@@ -32,7 +32,7 @@ extension DetailsNetwork {
             print("Error writing city to Firestore: \(error)")
             
             // Let interactor know that currency cannot be added to portfolio
-            completion("Error at adding!")
+            completion("Error adding currency!")
         }
         
     }
@@ -50,7 +50,7 @@ extension DetailsNetwork {
                 print("Error removing document: \(err)")
                 
                 // Let interactor know that currency cannot be removed to portfolio
-                completion("Error at deleting!")
+                completion("Error removing currency!")
             } else {
                 
                 // Let interactor know that currency is removed from portfolio
