@@ -66,6 +66,6 @@ protocol HomeRouterProtocol: AnyObject {
     var homeView: HomeView? { get set }
     
     // Presenter related
-    func navigateToDetailsPage()
+    func navigateToDetailsPage(_ selectedCurrency: Currency)
     func navigateToPortfolioPage()
 }

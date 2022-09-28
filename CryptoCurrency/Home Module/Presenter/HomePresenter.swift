@@ -25,7 +25,7 @@ extension HomePresenter {
     }
     
     func didSelectCurrency(currency: Currency) {
-        
+        homeRouter.navigateToDetailsPage(currency)
     }
     
     func didPressPortfolioButton() {

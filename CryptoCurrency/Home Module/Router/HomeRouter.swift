@@ -16,7 +16,11 @@ class HomeRouter: HomeContract.homeRouter {
 // Presenter related
 extension HomeRouter {
     
-    func navigateToDetailsPage() {
+    func navigateToDetailsPage(_ selectedCurrency: Currency) {
+        
+        guard let detailsView = DetailsContract.instantiateDetailsModule(with: selectedCurrency) else { return }
+        
+        homeView?.navigationController?.pushViewController(detailsView, animated: true)
         
     }
     
