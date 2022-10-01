@@ -26,6 +26,10 @@ extension HomeRouter {
     
     func navigateToPortfolioPage() {
         
+        guard let portfolioView = PortfolioContract.instantiatePortfolioModule() else { return }
+        
+        homeView?.navigationController?.pushViewController(portfolioView, animated: true)
+        
     }
     
     
