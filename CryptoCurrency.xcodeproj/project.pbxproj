@@ -22,6 +22,17 @@
 		0B230BB228E0820100CCF310 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B230BB028E0820100CCF310 /* CurrencyTableViewCell.swift */; };
 		0B230BB328E0820100CCF310 /* CurrencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B230BB128E0820100CCF310 /* CurrencyTableViewCell.xib */; };
 		0B4A3BAC28CDFB8D00D63D49 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4A3BAB28CDFB8D00D63D49 /* AlertView.swift */; };
+		0B5F5CB228E71A8F00F706A2 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5F5CB128E71A8F00F706A2 /* PortfolioView.swift */; };
+		0B5F5CB428E71B1D00F706A2 /* Portfolio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B5F5CB328E71B1D00F706A2 /* Portfolio.storyboard */; };
+		0B5F5CB728E71D4F00F706A2 /* PortfolioContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5F5CB628E71D4F00F706A2 /* PortfolioContract.swift */; };
+		0B5F5CB928E71D6F00F706A2 /* PortfolioContractHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5F5CB828E71D6F00F706A2 /* PortfolioContractHelper.swift */; };
+		0B5F5CBB28E71DC600F706A2 /* PortfolioNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5F5CBA28E71DC600F706A2 /* PortfolioNetwork.swift */; };
+		0B5F5CBD28E721C000F706A2 /* CurrenciesCollectionViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5F5CBC28E721C000F706A2 /* CurrenciesCollectionViewHelper.swift */; };
+		0B5F5CC128E7223900F706A2 /* CurrenciesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5F5CBF28E7223900F706A2 /* CurrenciesCollectionViewCell.swift */; };
+		0B5F5CC228E7223900F706A2 /* CurrenciesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B5F5CC028E7223900F706A2 /* CurrenciesCollectionViewCell.xib */; };
+		0B5F5CC428E727A000F706A2 /* PortfolioInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5F5CC328E727A000F706A2 /* PortfolioInteractor.swift */; };
+		0B5F5CC628E727C000F706A2 /* PortfolioPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5F5CC528E727C000F706A2 /* PortfolioPresenter.swift */; };
+		0B5F5CC828E727E400F706A2 /* PortfolioRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5F5CC728E727E400F706A2 /* PortfolioRouter.swift */; };
 		0B767D9928D88513001A9CB9 /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B767D9828D88513001A9CB9 /* HomeEntity.swift */; };
 		0B767D9B28D8851C001A9CB9 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B767D9A28D8851C001A9CB9 /* HomeRouter.swift */; };
 		0B767D9D28D88523001A9CB9 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B767D9C28D88523001A9CB9 /* HomePresenter.swift */; };
@@ -76,6 +87,17 @@
 		0B230BB028E0820100CCF310 /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
 		0B230BB128E0820100CCF310 /* CurrencyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyTableViewCell.xib; sourceTree = "<group>"; };
 		0B4A3BAB28CDFB8D00D63D49 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		0B5F5CB128E71A8F00F706A2 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
+		0B5F5CB328E71B1D00F706A2 /* Portfolio.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Portfolio.storyboard; sourceTree = "<group>"; };
+		0B5F5CB628E71D4F00F706A2 /* PortfolioContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioContract.swift; sourceTree = "<group>"; };
+		0B5F5CB828E71D6F00F706A2 /* PortfolioContractHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioContractHelper.swift; sourceTree = "<group>"; };
+		0B5F5CBA28E71DC600F706A2 /* PortfolioNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioNetwork.swift; sourceTree = "<group>"; };
+		0B5F5CBC28E721C000F706A2 /* CurrenciesCollectionViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesCollectionViewHelper.swift; sourceTree = "<group>"; };
+		0B5F5CBF28E7223900F706A2 /* CurrenciesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesCollectionViewCell.swift; sourceTree = "<group>"; };
+		0B5F5CC028E7223900F706A2 /* CurrenciesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrenciesCollectionViewCell.xib; sourceTree = "<group>"; };
+		0B5F5CC328E727A000F706A2 /* PortfolioInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioInteractor.swift; sourceTree = "<group>"; };
+		0B5F5CC528E727C000F706A2 /* PortfolioPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioPresenter.swift; sourceTree = "<group>"; };
+		0B5F5CC728E727E400F706A2 /* PortfolioRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioRouter.swift; sourceTree = "<group>"; };
 		0B767D9828D88513001A9CB9 /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
 		0B767D9A28D8851C001A9CB9 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		0B767D9C28D88523001A9CB9 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
@@ -309,6 +331,96 @@
 			path = "Table View Cell";
 			sourceTree = "<group>";
 		};
+		0B5F5CA528E7196800F706A2 /* Portfolio Module */ = {
+			isa = PBXGroup;
+			children = (
+				0B5F5CAB28E7199B00F706A2 /* Contract */,
+				0B5F5CAA28E7199600F706A2 /* Network */,
+				0B5F5CA928E7199300F706A2 /* View */,
+				0B5F5CA828E7198200F706A2 /* Interactor */,
+				0B5F5CA728E7197900F706A2 /* Presenter */,
+				0B5F5CA628E7197300F706A2 /* Router */,
+			);
+			path = "Portfolio Module";
+			sourceTree = "<group>";
+		};
+		0B5F5CA628E7197300F706A2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0B5F5CC728E727E400F706A2 /* PortfolioRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		0B5F5CA728E7197900F706A2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0B5F5CC528E727C000F706A2 /* PortfolioPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0B5F5CA828E7198200F706A2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0B5F5CC328E727A000F706A2 /* PortfolioInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0B5F5CA928E7199300F706A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0B5F5CAC28E719A900F706A2 /* Storyboard */,
+				0B5F5CB128E71A8F00F706A2 /* PortfolioView.swift */,
+				0B5F5CB528E71D1A00F706A2 /* Helper */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0B5F5CAA28E7199600F706A2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0B5F5CBA28E71DC600F706A2 /* PortfolioNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0B5F5CAB28E7199B00F706A2 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				0B5F5CB628E71D4F00F706A2 /* PortfolioContract.swift */,
+				0B5F5CB828E71D6F00F706A2 /* PortfolioContractHelper.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		0B5F5CAC28E719A900F706A2 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0B5F5CB328E71B1D00F706A2 /* Portfolio.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		0B5F5CB528E71D1A00F706A2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0B5F5CBC28E721C000F706A2 /* CurrenciesCollectionViewHelper.swift */,
+				0B5F5CBE28E7221100F706A2 /* Collection View Cell */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		0B5F5CBE28E7221100F706A2 /* Collection View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0B5F5CBF28E7223900F706A2 /* CurrenciesCollectionViewCell.swift */,
+				0B5F5CC028E7223900F706A2 /* CurrenciesCollectionViewCell.xib */,
+			);
+			path = "Collection View Cell";
+			sourceTree = "<group>";
+		};
 		0B767DA028D88537001A9CB9 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -440,6 +552,7 @@
 				0BD1B37428CE7FB100AB905C /* Sign Up Module */,
 				0B1D2D5328D63B9E004F0E7B /* Home Module */,
 				0B02FE6628E31F5D00CB2DE0 /* Details Module */,
+				0B5F5CA528E7196800F706A2 /* Portfolio Module */,
 				0BEA2A6F28C764CA0072693A /* AppDelegate.swift */,
 				0BEA2A7128C764CA0072693A /* SceneDelegate.swift */,
 				0BEA2A7A28C764CB0072693A /* LaunchScreen.storyboard */,
@@ -641,6 +754,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B5F5CC228E7223900F706A2 /* CurrenciesCollectionViewCell.xib in Resources */,
 				0B230BB328E0820100CCF310 /* CurrencyTableViewCell.xib in Resources */,
 				0B767DA228D88553001A9CB9 /* Home.storyboard in Resources */,
 				0B85541F28C89DE000A3CB7A /* Colors.xcassets in Resources */,
@@ -650,6 +764,7 @@
 				0BEA2A7928C764CB0072693A /* Assets.xcassets in Resources */,
 				0B02FE6F28E31FCE00CB2DE0 /* Details.storyboard in Resources */,
 				0BEA2A7728C764CA0072693A /* Login.storyboard in Resources */,
+				0B5F5CB428E71B1D00F706A2 /* Portfolio.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,13 +781,18 @@
 				0BFBDDD428C786C10079C1B9 /* LoginResponse.swift in Sources */,
 				0BD1B38628CF4E7300AB905C /* SignUpPresenter.swift in Sources */,
 				0BD1B38828CF4E8200AB905C /* SignUpResponse.swift in Sources */,
+				0B5F5CB728E71D4F00F706A2 /* PortfolioContract.swift in Sources */,
 				0B02FE7528E32E2100CB2DE0 /* DetailsContractHelper.swift in Sources */,
 				0B02FE7B28E32E5300CB2DE0 /* DetailsPresenter.swift in Sources */,
 				0BEA2A7428C764CA0072693A /* LoginView.swift in Sources */,
+				0B5F5CBD28E721C000F706A2 /* CurrenciesCollectionViewHelper.swift in Sources */,
+				0B5F5CC128E7223900F706A2 /* CurrenciesCollectionViewCell.swift in Sources */,
 				0BD1B38C28CF4EAE00AB905C /* SignUpNetwork.swift in Sources */,
 				0BD1B38A28CF4E9B00AB905C /* SignUpRouter.swift in Sources */,
+				0B5F5CB928E71D6F00F706A2 /* PortfolioContractHelper.swift in Sources */,
 				0B767D9F28D88531001A9CB9 /* HomeInteractor.swift in Sources */,
 				0BFBDDCC28C77DF50079C1B9 /* LoginRouter.swift in Sources */,
+				0B5F5CBB28E71DC600F706A2 /* PortfolioNetwork.swift in Sources */,
 				0B767D9928D88513001A9CB9 /* HomeEntity.swift in Sources */,
 				0B4A3BAC28CDFB8D00D63D49 /* AlertView.swift in Sources */,
 				0B02FE7128E31FE900CB2DE0 /* DetailsView.swift in Sources */,
@@ -685,6 +805,7 @@
 				0B02FE7728E32E3500CB2DE0 /* DetailsNetwork.swift in Sources */,
 				0BFBDDD028C77E1C0079C1B9 /* LoginContract.swift in Sources */,
 				0B767DA428D8856F001A9CB9 /* HomeView.swift in Sources */,
+				0B5F5CB228E71A8F00F706A2 /* PortfolioView.swift in Sources */,
 				0B230BAE28E0804200CCF310 /* CurrenciesTableViewHelper.swift in Sources */,
 				0B1D2D5D28D63C07004F0E7B /* Currency.swift in Sources */,
 				0B767D9D28D88523001A9CB9 /* HomePresenter.swift in Sources */,
@@ -692,10 +813,13 @@
 				0BD1B39028CF4EC400AB905C /* SignUpContractHelper.swift in Sources */,
 				0BEA2A7228C764CA0072693A /* SceneDelegate.swift in Sources */,
 				0BFBDDCA28C77DED0079C1B9 /* LoginPresenter.swift in Sources */,
+				0B5F5CC428E727A000F706A2 /* PortfolioInteractor.swift in Sources */,
 				0BFBDDD828C789730079C1B9 /* LoginContractHelper.swift in Sources */,
 				0B02FE7D28E32E6000CB2DE0 /* DetailsRouter.swift in Sources */,
 				0B767DA828D8858A001A9CB9 /* HomeContract.swift in Sources */,
 				0BD1B38E28CF4EB600AB905C /* SignUpContract.swift in Sources */,
+				0B5F5CC828E727E400F706A2 /* PortfolioRouter.swift in Sources */,
+				0B5F5CC628E727C000F706A2 /* PortfolioPresenter.swift in Sources */,
 				0BD1B38428CF4E6700AB905C /* SignUpInteractor.swift in Sources */,
 				0BFBDDDC28C797980079C1B9 /* ThemeManager.swift in Sources */,
 			);
